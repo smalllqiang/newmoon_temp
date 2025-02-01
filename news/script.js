@@ -200,6 +200,12 @@ function searchTable() {
 
 
 function resetAllCondition() {
+    const table = document.getElementById("goods-table");
+    const headers = table.getElementsByTagName("th");
+    for (let i = 0; i < headers.length; i++) {
+        headers[i].classList.remove("active");
+    }
+
 
     // 获取第一个下拉框
     var clubSelect = document.getElementById("club-name");
