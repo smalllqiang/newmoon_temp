@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="newmoon">
+<meta name="author" content="newmoon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../img/icon.ico">
+<title>新月　新闻部　制品</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+<!--
+<div class="sidebar" id="sidebar"> </div>
+<button class="toggle-btn" id="toggle-btn" onclick="toggleSidebar()">收起</button>
+-->
+<div class="main-content">
+    <div class="head-image"> <img width="125px" src="../img/goods.png" alt="goods"></div>
+    <div class="title">制品</div>
+    <label class="condition">
+<input type="text" id="search" placeholder="搜索" onkeyup="searchTable()">
+        <select class="club-name" name="社团名称" id="club-name">
+            <option value="ALL">社团</option>
+            <option value="新月">新月</option>
+        </select>
+        <select class="goods-info" name="制品信息" id="goods-info">
+            <option value="ALL">类型</option>
+            <option value="挂坠">挂坠</option>
+        </select>
+        <button onClick="resetAllCondition()">重置</button>
+    </label>
+    <table class="goods-table" id="goods-table">
+        <thead>
+        <th>制品名</th>
+            <th onclick="sortTable(1)">制品类型</th>
+            <th onclick="sortTable(2)">社团</th>
+            <th onclick="sortTable(3)">价格</th>
+            <th>制品描述</th>
+            <th>其它</th>
+            </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

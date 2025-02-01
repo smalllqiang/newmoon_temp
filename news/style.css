@@ -1,0 +1,120 @@
+body {
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'PingFang SC', 'Segoe UI Variable Display', 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Yu Gothic UI', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: #1E272E;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #161616;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap;
+}
+th {
+    background-color: #263646;
+    color: #cccccc;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+	cursor: pointer;
+}
+tr:nth-child(even) {
+    background-color: #263646;
+}
+tr:hover {
+    background-color: #1e2b38;
+}
+.head-image {
+    text-align: center;
+    margin: 2px 0;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F5F5F5;
+}
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 40px auto;/*left 350px*/
+    padding: 20px;
+    background: #2C3E50;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+.condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    gap: 0.2em;
+}
+.sidebar {
+    margin: 10px;
+    width: 250px;
+    height: 93vh;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #2c3e50;
+    position: fixed;
+    transition: all 0.3s ease;
+}
+.sidebar.hidden {
+    display: none;
+}
+.sidebar-content {
+    padding: 10px;
+}
+.main-content.hidden-sidebar {
+    margin-left: auto;
+}
+/*
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        margin-left: 0; 
+    }
+    .toggle-btn {
+		    margin-left: 0px;
+	}
+}
+*/
+.toggle-btn {
+    position: fixed;
+    margin: 50px auto auto 300px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #2c3e50;
+    color: white;
+    border: 0px;
+    padding: 5px 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle-btn.hidden {
+    margin-left: 0px;
+}
+
+
+.active {
+            color: red;
+        }
